@@ -6,7 +6,7 @@ const path = require("node:path");
 const PORT = process.env.PORT || 3000;
 const DATA_DIR = process.env.DATA_DIR || path.join(__dirname, "data");
 const STATE_FILE = path.join(DATA_DIR, "state.json");
-const PUBLIC = path.join(__dirname, "public");
+const PUBLIC = __dirname;
 
 const RED = ["Tor M", "Amund", "Lasse", "Noreng", "Vangen", "Mølla"];
 const WHITE = ["Stian", "Haltbakk", "Morten", "Hagen", "Ole P.", "Fabian"];
